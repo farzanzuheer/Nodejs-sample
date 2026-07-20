@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Expense Calculator</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Daily Expense Calculator</h1>
+
+    <form id="expense-form">
+      <input type="text" id="expense-name" placeholder="Expense name (e.g. Lunch)" required>
+      <input type="number" id="expense-amount" placeholder="Amount" min="0" step="0.01" required>
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <ul id="expense-list"></ul>
+
+    <div class="total">
+      Total: <span id="total-amount">0.00</span>
+    </div>
+
+    <button id="clear-btn">Clear All</button>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
